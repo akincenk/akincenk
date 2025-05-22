@@ -1,6 +1,7 @@
 ### Hi there, I'm Cenk 👋
 
 I'm a software developer specializing in Python-based backend development, with a focus on modern architecture and data processing systems. I value clean code, sustainable architecture, and continuous learning.
+“I help early-stage businesses turn messy data into actionable AI solutions.”
 
 ---
 
