@@ -44,7 +44,7 @@ I'm a software developer specializing in Python-based backend development, with 
 
 #### 📫 Contact
 
-- Email: cenkakin@me.com
+- Email: akincenk@gmail.com
 - LinkedIn: [https://www.linkedin.com/in/cenk-akin-11b27929b/]
 
 ---
