@@ -48,6 +48,10 @@ What I bring to a team:
 - **Data & AI:** PostgreSQL · Redis · Pandas · scikit-learn · OCR · Vector search · LLM APIs & agents
 - **Delivery:** Docker · GitHub Actions · Alembic · Pytest · Linux · Nginx
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=akincenk&layout=compact&hide_border=true" alt="Top languages" />
+</p>
+
 ---
 
 <div align="center">
