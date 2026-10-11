@@ -14,7 +14,7 @@ Vancouver, BC
 
 I build backend services, data pipelines and AI agents in Python. My focus is software that solves operational problems: inventory, forecasting, staffing, document processing and monitoring that runs around the clock without anyone watching it.
 
-Before I wrote code, I ran the operations this software is for. I spent eight years in customer operations at **Turkcell Global Bilgi** and **KKTCELL**, where I built a national operator's customer-service and CRM operation from scratch: call centre, back office, IVR and the full KPI framework. That background shapes how I engineer:
+Before I wrote code, I ran the operations this software is for. I spent eight years leading customer-operations teams of up to 150 people at **Turkcell Global Bilgi** and **KKTCELL**. At KKTCELL, I built a national operator's customer-service and CRM operation from scratch: call centre, back office, IVR and the full KPI framework. That background shapes how I engineer:
 
 - **I start from the workflow.** I model how a warehouse, store or service centre really runs before I design a single table.
 - **I ship production-ready.** Migrations, containers, tests, CI, retries and alerting arrive with the first version.
