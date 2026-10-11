@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220"><style>    * { fill: none; stroke: none; }
+    .soft rect, .soft { fill: #d2d2d7; }
+    .softa rect { fill: rgba(0,102,204,.35); }
+    .fill { fill: #0066cc; }
+    .line, .line * , .line path { stroke: #6e6e73; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+    .line.a { stroke: #0066cc; }
+    .dash { stroke: #0066cc; stroke-width: 1.6; stroke-dasharray: 4 5; }
+    .dash2 { stroke-dasharray: 5 6; }
+    .frame { stroke: #6e6e73; stroke-width: 2; stroke-linejoin: round; }
+    .ring { stroke: #6e6e73; stroke-width: 2; }
+    .ring2 { stroke: #0066cc; stroke-width: 1.6; opacity: .45; }
+    .softring { stroke: #d2d2d7; stroke-width: 10; }
+    .arc { stroke: #0066cc; stroke-width: 10; }
+    .arc2 { stroke: rgba(0,102,204,.45); stroke-width: 10; }
+    .hl { fill: rgba(0,102,204,.22); }
+    .bubble { fill: #d2d2d7; }
+    .bubblea { fill: #0066cc; }
+    .node circle { fill: #ffffff; stroke: #6e6e73; stroke-width: 2.2; }
+    .bell { stroke: #6e6e73; stroke-width: 2.4; stroke-linejoin: round; } .bg { fill: #f5f5f7; }</style><rect class="bg" width="400" height="220" rx="20"/><g transform="translate(40 30) scale(1.6)"><path class="frame" d="M30 10H84V84L77 79 70 84 63 79 57 84 50 79 43 84 37 79 30 84Z"/><g class="soft"><rect x="40" y="22" width="34" height="6" rx="3"/><rect x="40" y="36" width="26" height="5" rx="2.5"/><rect x="40" y="47" width="30" height="5" rx="2.5"/><rect x="40" y="58" width="22" height="5" rx="2.5"/></g><path class="line" d="M100 50H118"/><path class="line" d="M112 44 118 50 112 56"/><circle class="softring" cx="154" cy="50" r="26"/><path class="arc" d="M154 24A26 26 0 0 1 178.7 58"/><path class="arc2" d="M178.7 58A26 26 0 0 1 140 71.9"/></g></svg>

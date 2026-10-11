@@ -2,7 +2,7 @@
 
 # Cenk Akın
 
-**Operations leader turned software builder: Python, FastAPI, AI automation**
+**Python &amp; AI engineer · FastAPI · data pipelines · automation that runs itself**
 
 Vancouver, BC
 
@@ -12,37 +12,73 @@ Vancouver, BC
 
 ---
 
-I spent 8 years running large customer-operations teams of 100–150 people across two countries, at **Turkcell Global Bilgi** and **KKTCELL**. Today I build the software I wish I had back then. Backend services, data pipelines and AI agents take the repetitive work off people and turn raw operational data into decisions.
+I build backend services, data pipelines and AI agents in Python. My focus is software that solves operational problems: inventory, forecasting, staffing, document processing and monitoring that runs around the clock without anyone watching it.
 
-What I bring to a team:
+Before I wrote code, I ran the operations this software is for. I spent eight years in customer operations at **Turkcell Global Bilgi** and **KKTCELL**, where I built a national operator's customer-service and CRM operation from scratch: call centre, back office, IVR and the full KPI framework. That background shapes how I engineer:
 
-- **Operations first.** I design around how warehouses, retail floors and service centres really work, not how a spec imagines them.
-- **Production habits.** Migrations, containers, CI, retries and alerting come with the first version, not as an afterthought.
-- **Automation that runs unattended.** Scheduled jobs that monitor sources, apply business rules and notify only when something actually matters.
+- **I start from the workflow.** I model how a warehouse, store or service centre really runs before I design a single table.
+- **I ship production-ready.** Migrations, containers, tests, CI, retries and alerting arrive with the first version.
+- **I automate the boring parts.** Scheduled services pull data, apply business rules and escalate only what needs a human decision.
 
 ## Selected work
 
-**Operations & supply chain**
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://github.com/akincenk/Warehouse-AI-Suite-"><img src="assets/warehouse-ai-suite.svg" alt="Warehouse AI Suite" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/Warehouse-AI-Suite-">Warehouse AI Suite</a></h3>
+      <p>Tracks SKUs, suppliers, stock and purchase orders, and flags low inventory before it becomes a stockout.</p>
+      <p><sub>FastAPI · PostgreSQL · SQLAlchemy · Alembic · Docker</sub></p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/akincenk/Retail-Demand-Staffing-Optimizer"><img src="assets/staffing-optimizer.svg" alt="Demand &amp; Staffing Optimizer" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/Retail-Demand-Staffing-Optimizer">Demand &amp; Staffing Optimizer</a></h3>
+      <p>Forecasts demand for every store and product, then turns it into a staffing plan that meets service-level targets.</p>
+      <p><sub>FastAPI · PostgreSQL · forecasting · Docker</sub></p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/akincenk/warehouse-management-system"><img src="assets/wms.svg" alt="Warehouse Management System" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/warehouse-management-system">Warehouse Management System</a></h3>
+      <p>Inventory and order API with role-based permissions and JWT authentication.</p>
+      <p><sub>FastAPI · SQLAlchemy · JWT · RBAC</sub></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://github.com/akincenk/Receipt-OCR-Analytics-Platform"><img src="assets/receipt-ocr.svg" alt="Receipt OCR &amp; Analytics" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/Receipt-OCR-Analytics-Platform">Receipt OCR &amp; Analytics</a></h3>
+      <p>Turns receipts into structured data and serves spend analytics by vendor, category and period.</p>
+      <p><sub>Tesseract OCR · FastAPI · PostgreSQL · Docker</sub></p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/akincenk/insightai"><img src="assets/insightai.svg" alt="InsightAI" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/insightai">InsightAI</a></h3>
+      <p>Ask a question in plain English and get the answer straight from a stack of PDFs.</p>
+      <p><sub>Vector search · OpenAI · PyMuPDF · FastAPI</sub></p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/akincenk/Tradewatch"><img src="assets/tradewatch.svg" alt="Tradewatch" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/Tradewatch">Tradewatch</a></h3>
+      <p>Streams market trades in real time and surfaces unusual activity on a live dashboard.</p>
+      <p><sub>WebSockets · Redis · Plotly Dash · Pytest</sub></p>
+    </td>
+  </tr>
+</table>
 
-| Project | What it does | Stack |
-|---|---|---|
-| [Warehouse AI Suite](https://github.com/akincenk/Warehouse-AI-Suite-) | SKU, supplier, inventory and purchase-order backend with low-stock alerts | FastAPI · PostgreSQL · SQLAlchemy · Alembic · Docker |
-| [Retail Demand & Staffing Optimizer](https://github.com/akincenk/Retail-Demand-Staffing-Optimizer) | Forecasts store × SKU demand and builds staffing plans that meet service-level targets | FastAPI · PostgreSQL · Forecasting · Docker |
-| [Warehouse Management System](https://github.com/akincenk/warehouse-management-system) | Inventory and order API with role-based access control and JWT auth | FastAPI · SQLAlchemy · JWT |
+**Private builds** · code not public, happy to walk through them
 
-**Data & AI**
+- **Personal AI assistant.** Local-first, runs 24/7 on my own hardware, with source-linked memory, one-command agents, encrypted storage and strict spending limits.
+- **Multi-model AI council.** Several language models debate a question and return one reviewed answer.
+- **Unattended monitoring pipelines.** A family of GitHub Actions services that watch public data sources on a schedule, filter by business rules and alert by email, Telegram or voice, with retry and outage handling built in.
 
-| Project | What it does | Stack |
-|---|---|---|
-| [Receipt OCR & Analytics](https://github.com/akincenk/Receipt-OCR-Analytics-Platform) | Extracts structured data from receipts and serves spend, vendor and category analytics | FastAPI · Tesseract OCR · PostgreSQL · Docker |
-| [InsightAI](https://github.com/akincenk/insightai) | Ask questions in plain language and get answers from inside PDF documents | FastAPI · PyMuPDF · Vector search · OpenAI |
-| [Tradewatch](https://github.com/akincenk/Tradewatch) | Real-time crypto trade monitoring that detects unusual market activity | FastAPI · WebSockets · Redis · Plotly Dash |
+## Background
 
-**Private builds** (code not public, happy to walk through them)
-
-- **Personal AI assistant.** Local-first and runs around the clock on my own hardware. Features: memory with linked sources, agents launched with one command, spending caps and self-evaluation.
-- **Multi-model AI council.** Several language models debate a question and produce one reviewed answer.
-- **Unattended monitoring pipelines.** A family of GitHub Actions services that watch public data sources on a schedule. They apply rule-based filtering and send email, Telegram and voice alerts, with retry and outage handling.
+| Years | Role |
+|---|---|
+| 2012 – present | Independent software engineer: Python, FastAPI, data and AI automation |
+| 2011 – 2012 | Unit Supervisor, Turkcell Global Bilgi |
+| 2010 – 2011 | Operations Manager, Customer Services &amp; CRM, KKTCELL: built the operation from zero |
+| 2004 – 2010 | Unit Supervisor, Turkcell Global Bilgi |
 
 ## Toolbox
 
