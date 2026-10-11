@@ -17,7 +17,7 @@ I build backend services, data pipelines and AI agents in Python. My focus is so
 Before I wrote code, I ran the operations this software is for. I spent eight years leading customer-operations teams of up to 150 people at **Turkcell Global Bilgi** and **KKTCELL**. At KKTCELL, I built a national operator's customer-service and CRM operation from scratch: call centre, back office, IVR and the full KPI framework. That background shapes how I engineer:
 
 - **I start from the workflow.** I model how a warehouse, store or service centre really runs before I design a single table.
-- **I ship production-ready.** Migrations, containers, tests, CI, retries and alerting arrive with the first version.
+- **I build it to last.** Database migrations, Docker containers, retries and alerting are part of the design, not an afterthought.
 - **I automate the boring parts.** Scheduled services pull data, apply business rules and escalate only what needs a human decision.
 
 ## Selected work
@@ -75,7 +75,7 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 
 | Years | Role |
 |---|---|
-| 2012 – present | Independent software engineer: Python, FastAPI, data and AI automation |
+| 2012 – present | Independent work; self-taught software engineering in Python, FastAPI, data and AI automation |
 | 2011 – 2012 | Unit Supervisor, Turkcell Global Bilgi |
 | 2010 – 2011 | Operations Manager, Customer Services &amp; CRM, KKTCELL: built the operation from zero |
 | 2004 – 2010 | Unit Supervisor, Turkcell Global Bilgi |
@@ -85,8 +85,6 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" alt="Django" />
-  <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask" />
   <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
   <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic" />
 </p>
@@ -95,14 +93,14 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
   <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
-  <img src="https://img.shields.io/badge/Claude_API-D97757?style=flat-square&logo=claude&logoColor=white" alt="Claude API" />
+  <img src="https://img.shields.io/badge/OpenAI_API-412991?style=flat-square" alt="OpenAI API" />
 </p>
 <p>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="Pytest" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=white" alt="Linux" />
-  <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
+  <img src="https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="WebSockets" />
 </p>
 
 ## GitHub activity
