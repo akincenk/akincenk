@@ -80,7 +80,7 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 | 2012 – 2020 | Independent software developer, remote contracts |
 | 2011 – 2012 | Line Manager, Turkcell Global Bilgi: Turkcell Platinum operation |
 | 2010 – 2011 | Line Manager, KKTCELL: built the customer-service and CRM operation from zero |
-| 2004 – 2010 | Operations Manager, Turkcell Global Bilgi: Black and Platinum operations, teams of up to 150 |
+| 2004 – 2010 | Team Leader / Unit Manager, Turkcell Global Bilgi: Black and Platinum operations, teams of up to 150 |
 
 ## Toolbox
 
