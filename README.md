@@ -75,10 +75,12 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 
 | Years | Role |
 |---|---|
-| 2012 – present | Independent work; self-taught software engineering in Python, FastAPI, data and AI automation |
-| 2011 – 2012 | Unit Supervisor, Turkcell Global Bilgi |
-| 2010 – 2011 | Operations Manager, Customer Services &amp; CRM, KKTCELL: built the operation from zero |
-| 2004 – 2010 | Unit Supervisor, Turkcell Global Bilgi |
+| 2023 – present | Software Developer, freelance: Python automation, data pipelines, LLM tooling |
+| 2020 – 2023 | Founder, UDM Marketing (US): design and marketing agency, e-commerce, in-house web and software development |
+| 2012 – 2020 | Independent software developer, remote contracts |
+| 2011 – 2012 | Line Manager, Turkcell Global Bilgi: Turkcell Platinum operation |
+| 2010 – 2011 | Line Manager, KKTCELL: built the customer-service and CRM operation from zero |
+| 2004 – 2010 | Operations Manager, Turkcell Global Bilgi: Black and Platinum operations, teams of up to 150 |
 
 ## Toolbox
 
