@@ -2,7 +2,7 @@
 
 # Cenk Akın
 
-**Python &amp; AI engineer · FastAPI · data pipelines · automation that runs itself**
+**Python &amp; AI developer · FastAPI · data pipelines · automation that runs itself**
 
 Vancouver, BC
 
