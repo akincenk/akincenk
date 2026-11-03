@@ -8,6 +8,7 @@ from html import escape
 
 USER = "akincenk"
 TOP = 6
+EXCLUDE = {"claude-sync", "air-arsiv"}  # config backup / archive, not authored code
 PRIVATE = bool(os.environ.get("LANGS_TOKEN"))
 TOKEN = os.environ.get("LANGS_TOKEN") or os.environ.get("GITHUB_TOKEN")
 COLORS = {"Python": "#3572A5", "JavaScript": "#f1e05a", "TypeScript": "#3178c6",
@@ -32,7 +33,7 @@ def totals():
         page += 1
     c = Counter()
     for r in repos:
-        if not r["fork"] and not r["archived"]:
+        if not r["fork"] and not r["archived"] and r["name"] not in EXCLUDE:
             c.update(get(r["languages_url"]))
     return c
 
