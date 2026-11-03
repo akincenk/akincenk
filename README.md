@@ -109,8 +109,8 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=akincenk&layout=compact&hide_border=true&card_width=380&langs_count=6&theme=github_dark" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=akincenk&layout=compact&hide_border=true&card_width=380&langs_count=6" alt="Top languages" height="165" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/top-langs-dark.svg" />
+    <img src="assets/top-langs.svg" alt="Top languages" height="165" />
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=akincenk&hide_border=true&theme=github-dark-blue" />
