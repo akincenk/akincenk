@@ -16,6 +16,7 @@ jobs:
       - run: python3 scripts/top_langs.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LANGS_TOKEN: ${{ secrets.LANGS_TOKEN }}
       - run: |
           git diff --quiet assets/ && exit 0
           git config user.name "github-actions[bot]"

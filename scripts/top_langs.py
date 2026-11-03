@@ -1,10 +1,15 @@
-"""Build assets/top-langs{,-dark}.svg from public, non-fork repos of USER."""
+"""Build assets/top-langs{,-dark}.svg from non-fork repos of USER.
+
+With LANGS_TOKEN (fine-grained PAT, Metadata read-only) private repos count too.
+Only aggregate percentages are published, never repo names."""
 import json, os, urllib.request
 from collections import Counter
 from html import escape
 
 USER = "akincenk"
 TOP = 6
+PRIVATE = bool(os.environ.get("LANGS_TOKEN"))
+TOKEN = os.environ.get("LANGS_TOKEN") or os.environ.get("GITHUB_TOKEN")
 COLORS = {"Python": "#3572A5", "JavaScript": "#f1e05a", "TypeScript": "#3178c6",
           "HTML": "#e34c26", "CSS": "#663399", "Shell": "#89e051", "Dockerfile": "#384d54",
           "Jupyter Notebook": "#DA5B0B", "Go": "#00ADD8", "Swift": "#F05138", "Mako": "#7e858d"}
@@ -12,14 +17,19 @@ COLORS = {"Python": "#3572A5", "JavaScript": "#f1e05a", "TypeScript": "#3178c6",
 
 def get(url):
     req = urllib.request.Request(url, headers={"Accept": "application/vnd.github+json"})
-    if os.environ.get("GITHUB_TOKEN"):
-        req.add_header("Authorization", f"Bearer {os.environ['GITHUB_TOKEN']}")
+    if TOKEN:
+        req.add_header("Authorization", f"Bearer {TOKEN}")
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.load(r)
 
 
 def totals():
-    repos = get(f"https://api.github.com/users/{USER}/repos?per_page=100&type=owner")
+    url = ("https://api.github.com/user/repos?affiliation=owner&visibility=all" if PRIVATE
+           else f"https://api.github.com/users/{USER}/repos?type=owner")
+    repos, page = [], 1
+    while batch := get(f"{url}&per_page=100&page={page}"):
+        repos += batch
+        page += 1
     c = Counter()
     for r in repos:
         if not r["fork"] and not r["archived"]:
