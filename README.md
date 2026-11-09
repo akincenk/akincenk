@@ -113,8 +113,8 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
     <img src="assets/top-langs.svg" alt="Top languages" height="165" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=akincenk&hide_border=true&theme=github-dark-blue" />
-    <img src="https://streak-stats.demolab.com?user=akincenk&hide_border=true" alt="Contribution streak" height="165" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/streak-dark.svg" />
+    <img src="assets/streak.svg" alt="Contribution streak" height="165" />
   </picture>
 </p>
 
