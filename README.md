@@ -25,8 +25,8 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 <table>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/Warehouse-AI-Suite-"><img src="assets/warehouse-ai-suite.svg" alt="Warehouse AI Suite" width="100%" /></a>
-      <h3><a href="https://github.com/akincenk/Warehouse-AI-Suite-">Warehouse AI Suite</a></h3>
+      <a href="https://github.com/akincenk/Warehouse-inventory-api"><img src="assets/warehouse-inventory-api.svg" alt="Warehouse Inventory API" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/Warehouse-inventory-api">Warehouse Inventory API</a></h3>
       <p>Tracks SKUs, suppliers, stock and purchase orders, and flags low inventory before it becomes a stockout.</p>
       <p><sub>FastAPI · PostgreSQL · SQLAlchemy · Alembic · Docker</sub></p>
     </td>
