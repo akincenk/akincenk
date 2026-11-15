@@ -2,7 +2,9 @@
 
 With LANGS_TOKEN (fine-grained PAT, Metadata read-only) private repos count too.
 Only aggregate percentages are published, never repo names."""
-import json, os, urllib.request
+import json
+import os
+import urllib.request
 from collections import Counter
 from html import escape
 

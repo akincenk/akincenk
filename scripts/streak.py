@@ -1,7 +1,9 @@
 """Build assets/streak{,-dark}.svg from USER's contribution calendar (last year).
 
 Replaces streak-stats.demolab.com, which kept timing out and showed a broken image."""
-import json, os, urllib.request
+import json
+import os
+import urllib.request
 from datetime import date, timedelta
 
 USER = "akincenk"
