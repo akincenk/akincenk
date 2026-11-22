@@ -60,7 +60,7 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
       <a href="https://github.com/akincenk/Tradewatch"><img src="assets/tradewatch.svg" alt="Tradewatch" width="100%" /></a>
       <h3><a href="https://github.com/akincenk/Tradewatch">Tradewatch</a></h3>
       <p>Streams market trades in real time and surfaces unusual activity on a live dashboard.</p>
-      <p><sub>WebSockets · Redis · Plotly Dash · Pytest</sub></p>
+      <p><sub>WebSockets · Plotly Dash · Pytest</sub></p>
     </td>
   </tr>
 </table>
@@ -92,7 +92,6 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 </p>
 <p>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
   <img src="https://img.shields.io/badge/OpenAI_API-412991?style=flat-square" alt="OpenAI API" />
