@@ -28,11 +28,11 @@ A personal AI assistant I run 24/7 on my own Mac Studio (Apple M5 Max, 36 GB). I
 
 | Skill | How Heresin does it | Measured |
 | --- | --- | --- |
-| **RAG** | Hybrid retrieval: full-text keywords + embeddings (int8 vector index) + a local cross-encoder reranker, over memories and the source notes themselves | Recall test sets: 97% and 100% found, MRR 0.93 and 0.92 (keyword-only: MRR 0.71) |
+| **RAG** | Hybrid retrieval: full-text keywords + embeddings (int8 vector index) + a local cross-encoder reranker, over memories and the source notes themselves | Recall test sets: <!--v:r1hit-->97%<!--/v--> and <!--v:r2hit-->100%<!--/v--> found, MRR <!--v:r1mrr-->0.93<!--/v--> and <!--v:r2mrr-->0.92<!--/v--> (keyword-only: MRR <!--v:kwmrr-->0.71<!--/v-->) |
 | **Agents + MCP** | Agent loop that can run shell commands inside a macOS Seatbelt sandbox (no network, no home folder, no secrets); permission gate, budget reservation, kill switch; MCP client | Every command logged; 3 failures warn, 6 stop |
 | **Context engineering** | Code, not the model, decides what each model sees: personal data stays on the local model, cloud tiers never receive it; tool output and documents are labelled as untrusted data | Routing local → free cloud → paid, with daily spending caps |
-| **LLM evaluation** | Daily personal exam through the real chat path, cross-lingual (Turkish ↔ English) retrieval check, recall suites; models are switched only on benchmark results | Daily exam 49–50 of 50; cross-lingual 60/60; local chat model picked by exam (Qwen 3.8 27B, 17/20 vs 15/20 for the previous model) |
-| **Harness engineering** | Test gate before every install, self-check, agent-safety evals, append-only audit log, encrypted storage (SQLCipher); a release that lowers any score never ships | 832 automated tests, all passing |
+| **LLM evaluation** | Daily personal exam through the real chat path, cross-lingual (Turkish ↔ English) retrieval check, recall suites; models are switched only on benchmark results | Daily exam <!--v:examrange-->49–50<!--/v--> of <!--v:examtotal-->50<!--/v-->; cross-lingual <!--v:xl-->60/60<!--/v-->; local chat model picked by exam (Qwen 3.8 27B, 17/20 vs 15/20 for the previous model) |
+| **Harness engineering** | Test gate before every install, self-check, agent-safety evals, append-only audit log, encrypted storage (SQLCipher); a release that lowers any score never ships | <!--v:tests-->832<!--/v--> automated tests, all passing |
 
 <sub>Python (standard library first) · SQLCipher · Ollama + llama.cpp (Qwen 3.8 27B, Qwen3-Coder 30B, EmbeddingGemma 2, BGE reranker v2 m3) · macOS sandbox-exec · launchd · 232,000+ memories · v0.21.47</sub>
 
