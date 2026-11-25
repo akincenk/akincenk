@@ -24,6 +24,8 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 
 A personal AI assistant I run 24/7 on my own Mac Studio (Apple M5 Max, 36 GB). It learns continuously from my notes and work sessions, answers from source-linked memory, uses sandboxed tools, and is measured every day. I set its goals, safety rules and acceptance tests; I build it with Claude Code as my AI pair programmer. Code is private; I am happy to walk through it.
 
+**Why "Heresin"?** Until I was seven or eight, Heresin was my imaginary friend. As far as I know the word means nothing in any language: a child made it up, and the people closest to me still know the name. Decades later, giving it to the assistant I am building felt exactly right. The friend who was always there now remembers what matters, answers my questions and helps me get work done.
+
 | Skill | How Heresin does it | Measured |
 | --- | --- | --- |
 | **RAG** | Hybrid retrieval: full-text keywords + embeddings (int8 vector index) + a local cross-encoder reranker, over memories and the source notes themselves | Recall test sets: 97% and 100% found, MRR 0.93 and 0.92 (keyword-only: MRR 0.71) |
