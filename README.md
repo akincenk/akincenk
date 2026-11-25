@@ -81,6 +81,7 @@ A personal AI assistant I run 24/7 on my own Mac Studio (Apple M5 Max, 36 GB). I
 
 **Private builds** · code not public, happy to walk through them
 
+- **Personal AI assistant.** Local-first, runs 24/7 on my own hardware, with source-linked memory, one-command agents, encrypted storage and strict spending limits.
 - **Multi-model AI council.** Several language models debate a question and return one reviewed answer.
 - **Unattended monitoring pipelines.** A family of GitHub Actions services that watch public data sources on a schedule, filter by business rules and alert by email, Telegram or voice, with retry and outage handling built in.
 
