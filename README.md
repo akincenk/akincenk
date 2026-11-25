@@ -20,6 +20,20 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 - **I build it to last.** Database migrations, Docker containers, retries and alerting are part of the design, not an afterthought.
 - **I automate the boring parts.** Scheduled services pull data, apply business rules and escalate only what needs a human decision.
 
+## Featured: Heresin, a local-first personal AI system
+
+A personal AI assistant I run 24/7 on my own Mac Studio (Apple M5 Max, 36 GB). It learns continuously from my notes and work sessions, answers from source-linked memory, uses sandboxed tools, and is measured every day. I set its goals, safety rules and acceptance tests; I build it with Claude Code as my AI pair programmer. Code is private; I am happy to walk through it.
+
+| Skill | How Heresin does it | Measured |
+| --- | --- | --- |
+| **RAG** | Hybrid retrieval: full-text keywords + embeddings (int8 vector index) + a local cross-encoder reranker, over memories and the source notes themselves | Recall test sets: 97% and 100% found, MRR 0.93 and 0.92 (keyword-only: MRR 0.71) |
+| **Agents + MCP** | Agent loop that can run shell commands inside a macOS Seatbelt sandbox (no network, no home folder, no secrets); permission gate, budget reservation, kill switch; MCP client | Every command logged; 3 failures warn, 6 stop |
+| **Context engineering** | Code, not the model, decides what each model sees: personal data stays on the local model, cloud tiers never receive it; tool output and documents are labelled as untrusted data | Routing local → free cloud → paid, with daily spending caps |
+| **LLM evaluation** | Daily personal exam through the real chat path, cross-lingual (Turkish ↔ English) retrieval check, recall suites; models are switched only on benchmark results | Daily exam 49–50 of 50; cross-lingual 60/60; local chat model picked by exam (Qwen 3.8 27B, 17/20 vs 15/20 for the previous model) |
+| **Harness engineering** | Test gate before every install, self-check, agent-safety evals, append-only audit log, encrypted storage (SQLCipher); a release that lowers any score never ships | 832 automated tests, all passing |
+
+<sub>Python (standard library first) · SQLCipher · Ollama + llama.cpp (Qwen 3.8 27B, Qwen3-Coder 30B, EmbeddingGemma 2, BGE reranker v2 m3) · macOS sandbox-exec · launchd · 232,000+ memories · v0.21.47</sub>
+
 ## Selected work
 
 <table>
@@ -67,7 +81,6 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 
 **Private builds** · code not public, happy to walk through them
 
-- **Personal AI assistant.** Local-first, runs 24/7 on my own hardware, with source-linked memory, one-command agents, encrypted storage and strict spending limits.
 - **Multi-model AI council.** Several language models debate a question and return one reviewed answer.
 - **Unattended monitoring pipelines.** A family of GitHub Actions services that watch public data sources on a schedule, filter by business rules and alert by email, Telegram or voice, with retry and outage handling built in.
 
