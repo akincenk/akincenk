@@ -56,7 +56,7 @@ Three public projects, each measured with its own evaluation and every result re
       <p><sub>FastAPI · PyMuPDF · embeddings · recall@k / MRR</sub></p>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/llm-router"><img src="assets/llm-router.svg" alt="llm-router" width="100%" /></a>
+      <a href="https://github.com/akincenk/llm-router"><img src="assets/llm-router-card.svg" alt="llm-router" width="100%" /></a>
       <h3><a href="https://github.com/akincenk/llm-router">llm-router</a></h3>
       <p>Sends each question to the cheapest model that can answer it and skips the model when the same question was already answered: explainable rules, a cascade with escalation, a semantic cache that never mixes up numbers.<br>Same <b>100%</b> accuracy as always using the large model at <b>58% lower cost</b>; the cache answered 14 / 15 reworded questions and was fooled by <b>0 / 5</b> number traps.</p>
       <p><sub>Python stdlib · semantic cache · cost and accuracy evaluation</sub></p>
@@ -81,7 +81,7 @@ Three public projects, each measured with its own evaluation and every result re
       <p><sub>FastAPI · PostgreSQL · SQLAlchemy · Alembic · Docker</sub></p>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/ics-tidy"><img src="assets/ics-tidy.svg" alt="ics-tidy" width="100%" /></a>
+      <a href="https://github.com/akincenk/ics-tidy"><img src="assets/ics-tidy-card.svg" alt="ics-tidy" width="100%" /></a>
       <h3><a href="https://github.com/akincenk/ics-tidy">ics-tidy</a></h3>
       <p>Merges calendar files, removes duplicate events and expands recurring events into an agenda or CSV.</p>
       <p><sub>Rust CLI and library</sub></p>
@@ -89,13 +89,13 @@ Three public projects, each measured with its own evaluation and every result re
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/cron-explain"><img src="assets/cron-explain.svg" alt="cron-explain" width="100%" /></a>
+      <a href="https://github.com/akincenk/cron-explain"><img src="assets/cron-explain-card.svg" alt="cron-explain" width="100%" /></a>
       <h3><a href="https://github.com/akincenk/cron-explain">cron-explain</a></h3>
       <p>Explains cron schedules in plain English, lists the next runs in any time zone with daylight-saving details, and warns about common mistakes.</p>
       <p><sub>Go library and CLI</sub></p>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/gs1-parse"><img src="assets/gs1-parse.svg" alt="gs1-parse" width="100%" /></a>
+      <a href="https://github.com/akincenk/gs1-parse"><img src="assets/gs1-parse-card.svg" alt="gs1-parse" width="100%" /></a>
       <h3><a href="https://github.com/akincenk/gs1-parse">gs1-parse</a></h3>
       <p>Parses GS1-128, GS1 DataMatrix and GS1 QR barcode scans into checked, typed values.</p>
       <p><sub>Kotlin library and CLI</sub></p>
