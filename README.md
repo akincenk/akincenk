@@ -19,6 +19,7 @@ Before I wrote code, I ran the operations this software is for. I spent eight ye
 - **I start from the workflow.** I model how a warehouse, store or service centre really runs before I design a single table.
 - **I build it to last.** Database migrations, Docker containers, retries and alerting are part of the design, not an afterthought.
 - **I automate the boring parts.** Scheduled services pull data, apply business rules and escalate only what needs a human decision.
+- **I measure before I claim.** Every AI project here ships with its own evaluation, and the README reports the weak results too.
 
 ## Featured: Heresin, a local-first personal AI system
 
@@ -36,16 +37,37 @@ A personal AI assistant I run 24/7 on my own Mac Studio (Apple M5 Max, 36 GB). I
 
 <sub>Python (standard library first) · SQLCipher · Ollama + llama.cpp (Qwen 3.8 27B, Qwen3-Coder 30B, EmbeddingGemma 2, BGE reranker v2 m3) · macOS sandbox-exec · launchd · 232,000+ memories · v0.21.47</sub>
 
-## Selected work
+## Open-source AI engineering
+
+Three public projects, each measured with its own evaluation and every result reported, including the weak ones. All evaluated on local models.
 
 <table>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/Warehouse-inventory-api"><img src="assets/warehouse-inventory-api.svg" alt="Warehouse Inventory API" width="100%" /></a>
-      <h3><a href="https://github.com/akincenk/Warehouse-inventory-api">Warehouse Inventory API</a></h3>
-      <p>Tracks SKUs, suppliers, stock and purchase orders, and flags low inventory before it becomes a stockout.</p>
-      <p><sub>FastAPI · PostgreSQL · SQLAlchemy · Alembic · Docker</sub></p>
+      <a href="https://github.com/akincenk/agent-harness"><img src="assets/agent-harness.svg" alt="agent-harness" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/agent-harness">agent-harness</a></h3>
+      <p>A tested harness for long-running LLM agents: the model proposes tool calls, plain code decides. Budgets, failure limits, loop detection, a kill switch, prompt-injection guardrails, sandboxed tools, parallel sub-agents and traces.<br><b>8 / 8</b> tasks done and <b>6 / 6</b> attacks harmless with a local 27B model; 26 tests make each guardrail hold even when the model obeys the attacker.</p>
+      <p><sub>Python stdlib · OpenAI-compatible API · macOS sandbox</sub></p>
     </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/akincenk/insightai"><img src="assets/insightai.svg" alt="InsightAI" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/insightai">InsightAI</a></h3>
+      <p>Question answering over PDFs with page citations: vector, BM25 keyword and hybrid retrieval, with the default chosen by measurement.<br>Vector search ranked the right page best (MRR <b>0.94</b> on 30 questions, against 0.78 for keywords and 0.90 for hybrid) and had it in the top 3 every time.</p>
+      <p><sub>FastAPI · PyMuPDF · embeddings · recall@k / MRR</sub></p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/akincenk/llm-router"><img src="assets/llm-router.svg" alt="llm-router" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/llm-router">llm-router</a></h3>
+      <p>Sends each question to the cheapest model that can answer it and skips the model when the same question was already answered: explainable rules, a cascade with escalation, a semantic cache that never mixes up numbers.<br>Same <b>100%</b> accuracy as always using the large model at <b>58% lower cost</b>; the cache answered 14 / 15 reworded questions and was fooled by <b>0 / 5</b> number traps.</p>
+      <p><sub>Python stdlib · semantic cache · cost and accuracy evaluation</sub></p>
+    </td>
+  </tr>
+</table>
+
+## Selected work
+
+<table>
+  <tr>
     <td width="33%" valign="top">
       <a href="https://github.com/akincenk/Retail-Demand-Staffing-Optimizer"><img src="assets/staffing-optimizer.svg" alt="Demand &amp; Staffing Optimizer" width="100%" /></a>
       <h3><a href="https://github.com/akincenk/Retail-Demand-Staffing-Optimizer">Demand &amp; Staffing Optimizer</a></h3>
@@ -53,30 +75,36 @@ A personal AI assistant I run 24/7 on my own Mac Studio (Apple M5 Max, 36 GB). I
       <p><sub>FastAPI · PostgreSQL · forecasting · Docker</sub></p>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/warehouse-management-system"><img src="assets/wms.svg" alt="Warehouse Management System" width="100%" /></a>
-      <h3><a href="https://github.com/akincenk/warehouse-management-system">Warehouse Management System</a></h3>
-      <p>Inventory and order API with role-based permissions and JWT authentication.</p>
-      <p><sub>FastAPI · SQLAlchemy · JWT · RBAC</sub></p>
+      <a href="https://github.com/akincenk/Warehouse-inventory-api"><img src="assets/warehouse-inventory-api.svg" alt="Warehouse Inventory API" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/Warehouse-inventory-api">Warehouse Inventory API</a></h3>
+      <p>Tracks SKUs, suppliers, stock and purchase orders, and flags low inventory before it becomes a stockout.</p>
+      <p><sub>FastAPI · PostgreSQL · SQLAlchemy · Alembic · Docker</sub></p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/akincenk/ics-tidy"><img src="assets/ics-tidy.svg" alt="ics-tidy" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/ics-tidy">ics-tidy</a></h3>
+      <p>Merges calendar files, removes duplicate events and expands recurring events into an agenda or CSV.</p>
+      <p><sub>Rust CLI and library</sub></p>
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/Receipt-OCR-Analytics-Platform"><img src="assets/receipt-ocr.svg" alt="Receipt OCR &amp; Analytics" width="100%" /></a>
-      <h3><a href="https://github.com/akincenk/Receipt-OCR-Analytics-Platform">Receipt OCR &amp; Analytics</a></h3>
-      <p>Turns receipts into structured data and serves spend analytics by vendor, category and period.</p>
-      <p><sub>Tesseract OCR · FastAPI · PostgreSQL · Docker</sub></p>
+      <a href="https://github.com/akincenk/cron-explain"><img src="assets/cron-explain.svg" alt="cron-explain" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/cron-explain">cron-explain</a></h3>
+      <p>Explains cron schedules in plain English, lists the next runs in any time zone with daylight-saving details, and warns about common mistakes.</p>
+      <p><sub>Go library and CLI</sub></p>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/insightai"><img src="assets/insightai.svg" alt="InsightAI" width="100%" /></a>
-      <h3><a href="https://github.com/akincenk/insightai">InsightAI</a></h3>
-      <p>Ask a question in plain English and get the answer straight from a stack of PDFs.</p>
-      <p><sub>Vector search · OpenAI · PyMuPDF · FastAPI</sub></p>
+      <a href="https://github.com/akincenk/gs1-parse"><img src="assets/gs1-parse.svg" alt="gs1-parse" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/gs1-parse">gs1-parse</a></h3>
+      <p>Parses GS1-128, GS1 DataMatrix and GS1 QR barcode scans into checked, typed values.</p>
+      <p><sub>Kotlin library and CLI</sub></p>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/Tradewatch"><img src="assets/tradewatch.svg" alt="Tradewatch" width="100%" /></a>
-      <h3><a href="https://github.com/akincenk/Tradewatch">Tradewatch</a></h3>
-      <p>Streams market trades in real time and surfaces unusual activity on a live dashboard.</p>
-      <p><sub>WebSockets · Plotly Dash · Pytest</sub></p>
+      <a href="https://github.com/akincenk/warehouse-management-system"><img src="assets/wms.svg" alt="Warehouse Management System" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/warehouse-management-system">Warehouse Management System</a></h3>
+      <p>Inventory and order API with role-based permissions and JWT authentication.</p>
+      <p><sub>FastAPI · SQLAlchemy · JWT · RBAC</sub></p>
     </td>
   </tr>
 </table>
