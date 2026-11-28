@@ -2,7 +2,7 @@
 
 # Cenk Akın
 
-**Python &amp; AI developer · FastAPI · data pipelines · automation that runs itself**
+**Forward Deployed Engineer · Python, APIs &amp; SDKs · LLM integration · deployment**
 
 Vancouver, BC
 
@@ -12,11 +12,11 @@ Vancouver, BC
 
 ---
 
-I build backend services, data pipelines and AI agents in Python. My focus is software that solves operational problems: inventory, forecasting, staffing, document processing and monitoring that runs around the clock without anyone watching it.
+I build backend services, APIs, SDKs and AI agents in Python, and I take them live with the people who use them: discovery, integration, rollout and support. My focus is software that solves real operational problems and keeps running without anyone watching it.
 
 Before I wrote code, I ran the operations this software is for. I spent eight years leading customer-operations teams of up to 150 people at **Turkcell Global Bilgi** and **KKTCELL**. At KKTCELL, I built a national operator's customer-service and CRM operation from scratch: call centre, back office, IVR and the full KPI framework. That background shapes how I engineer:
 
-- **I start from the workflow.** I model how a warehouse, store or service centre really runs before I design a single table.
+- **I start from the customer's workflow.** I learn how their team really works before I design an API or a single table.
 - **I build it to last.** Database migrations, Docker containers, retries and alerting are part of the design, not an afterthought.
 - **I automate the boring parts.** Scheduled services pull data, apply business rules and escalate only what needs a human decision.
 - **I measure before I claim.** Every AI project here ships with its own evaluation, and the README reports the weak results too.
@@ -101,10 +101,10 @@ Three public projects, each measured with its own evaluation and every result re
       <p><sub>Kotlin library and CLI</sub></p>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/akincenk/warehouse-management-system"><img src="assets/wms.svg" alt="Warehouse Management System" width="100%" /></a>
-      <h3><a href="https://github.com/akincenk/warehouse-management-system">Warehouse Management System</a></h3>
-      <p>Inventory and order API with role-based permissions and JWT authentication.</p>
-      <p><sub>FastAPI · SQLAlchemy · JWT · RBAC</sub></p>
+      <a href="https://github.com/akincenk/integration-kit"><img src="assets/integration-kit.svg" alt="integration-kit" width="100%" /></a>
+      <h3><a href="https://github.com/akincenk/integration-kit">integration-kit</a></h3>
+      <p>A reference verification API with Python and JavaScript SDKs, plus the playbooks I use to take a customer from first call to production: idempotent retries, signed webhooks, actionable errors, a step-by-step integration guide and a troubleshooting runbook.<br>Tested end to end, including a Kubernetes deployment in CI.</p>
+      <p><sub>FastAPI · Python and JavaScript SDKs · Docker · Kubernetes</sub></p>
     </td>
   </tr>
 </table>
@@ -142,6 +142,8 @@ Three public projects, each measured with its own evaluation and every result re
 </p>
 <p>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="Pytest" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=white" alt="Linux" />

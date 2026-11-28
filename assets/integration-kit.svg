@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220"><style>    * { fill: none; stroke: none; }
+    .bg { fill: #f5f5f7; }
+    .soft { fill: #d2d2d7; }
+    .fill { fill: #0066cc; }
+    .frame { stroke: #6e6e73; stroke-width: 2.2; stroke-linejoin: round; }
+    .line { stroke: #6e6e73; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+    .line.a { stroke: #0066cc; }
+    .dash { stroke: #0066cc; stroke-width: 1.8; stroke-dasharray: 4 5; }
+    .ok { stroke: #ffffff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }</style>
+<rect class="bg" width="400" height="220" rx="20"/>
+<!-- customer app -->
+<rect class="frame" x="34" y="62" width="88" height="96" rx="12"/><rect class="soft" x="48" y="80" width="60" height="8" rx="4"/><rect class="soft" x="48" y="96" width="44" height="8" rx="4"/><rect class="soft" x="48" y="112" width="52" height="8" rx="4"/><rect class="fill" x="48" y="132" width="34" height="12" rx="6"/>
+<!-- SDK layer -->
+<rect class="frame" x="156" y="82" width="72" height="56" rx="10"/><path class="line a" d="M172 102l-8 8 8 8M212 102l8 8-8 8M198 98l-12 24"/>
+<!-- API + webhook -->
+<rect class="frame" x="262" y="62" width="104" height="96" rx="12"/><circle class="fill" cx="314" cy="98" r="16"/><path class="ok" d="M306 98l6 6 11-12"/><rect class="soft" x="282" y="128" width="64" height="8" rx="4"/><rect class="soft" x="292" y="142" width="44" height="6" rx="3"/>
+<path class="line" d="M122 110H156M228 110H262"/><path class="dash" d="M314 158V186H78V158"/>
+</svg>
